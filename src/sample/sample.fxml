@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="534.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="239.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/buildings.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="TextFieldCity" alignment="CENTER" layoutX="181.0" layoutY="482.0" prefHeight="25.0" prefWidth="173.0" />
+        <Button fx:id="ButtonRun" layoutX="358.0" layoutY="482.0" mnemonicParsing="false" onAction="#handleButtonRun" prefHeight="25.0" prefWidth="55.0" text="Search!" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS">
+            <effect>
+                <Glow />
+            </effect>
+        </Button>
+        <Label fx:id="TemperatureLabel" layoutX="140.0" layoutY="210.0" prefHeight="45.0" prefWidth="272.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+        <Label fx:id="PreasureLabel" layoutX="396.0" layoutY="83.0" prefHeight="25.0" prefWidth="90.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+        <Label fx:id="CityLabel" layoutX="140.0" layoutY="115.0" prefHeight="45.0" prefWidth="270.0" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+        <Label fx:id="CountryLabel" layoutX="140.0" layoutY="145.0" prefHeight="45.0" prefWidth="270.0" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+        <Label fx:id="HumidityLabel" layoutX="245.0" layoutY="83.0" prefHeight="25.0" prefWidth="78.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+        <Label fx:id="WindSpeedLabel" layoutX="67.0" layoutY="83.0" prefHeight="25.0" prefWidth="90.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+        <Label fx:id="SunriseLabel" layoutX="50.0" layoutY="185.0" prefHeight="25.0" prefWidth="120.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label fx:id="SunsetLabel" layoutX="50.0" layoutY="276.0" prefHeight="25.0" prefWidth="120.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label fx:id="DescriptionLabel" layoutX="140.0" layoutY="175.0" prefHeight="45.0" prefWidth="272.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+        <Label fx:id="LongitudeLabel" layoutX="378.0" layoutY="247.0" prefHeight="25.0" prefWidth="102.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+        <Label fx:id="LatitudeLabel" layoutX="378.0" layoutY="267.0" prefHeight="25.0" prefWidth="102.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+        <ImageView fx:id="SearchImageView" fitHeight="25.0" fitWidth="28.0" layoutX="169.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/loupe.png" />
+            </image>
+        </ImageView>
+      <ImageView fx:id="IconImageView" fitHeight="64.0" fitWidth="64.0" layoutX="239.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="TemperatureTomorrowLabel" layoutX="69.0" layoutY="385.0" prefHeight="25.0" prefWidth="72.0" />
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="69.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/wind.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="230.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/humidity.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="397.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/pressure.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="69.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/sunrise.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="69.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/sunset.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="397.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/equator.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="TomorrowDateLabel" layoutX="69.0" layoutY="313.0" prefHeight="25.0" prefWidth="72.0" />
+      <ImageView fx:id="IconTomorrowImageView" fitHeight="64.0" fitWidth="64.0" layoutX="68.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="TwoDaysTemperatureLabel" layoutX="235.0" layoutY="385.0" prefHeight="25.0" prefWidth="72.0" />
+      <Label fx:id="TwoDaysDateLabel" layoutX="235.0" layoutY="313.0" prefHeight="25.0" prefWidth="72.0" />
+      <ImageView fx:id="Icon2DaysImageView" fitHeight="64.0" fitWidth="64.0" layoutX="239.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="ThreeDaysDateLabel" layoutX="397.0" layoutY="313.0" prefHeight="25.0" prefWidth="72.0" />
+      <Label fx:id="ThreeDaysTemperatureLabel" layoutX="397.0" layoutY="385.0" prefHeight="25.0" prefWidth="72.0" />
+      <ImageView fx:id="Icon3DaysImageView" fitHeight="64.0" fitWidth="64.0" layoutX="397.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>
